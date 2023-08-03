@@ -4,7 +4,7 @@ target 'SDK-Sample' do
   use_frameworks!
 
   pod 'SaootiSDK', :git => 'https://<github_login>:<github_token>@github.com/saooti/ios-sdk.git'
-
+  
 end
 
 post_install do |installer|
