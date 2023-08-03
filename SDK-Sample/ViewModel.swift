@@ -18,7 +18,7 @@ class ViewModel: ObservableObject {
     @Published var isSDKUIVisible = false
 
     init() {
-        Saooti.player.playingState
+        Saooti.player.playingState.publisher
             .compactMap({ $0 })
             .filter({ $0.playingStatus == .playing })
             .receive(on: DispatchQueue.main)

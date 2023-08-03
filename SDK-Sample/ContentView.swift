@@ -27,7 +27,7 @@ struct ContentView: View {
                 Spacer()
 
                 if viewModel.isDetachedMiniPlayerVisible {
-                    MiniPlayerView(
+                    SaootiUI.MiniPlayerView(
                         isCloseButtonVisible: true,
                         onCloseButtonClick: {
                             viewModel.onMiniPlayerCloseButtonClick()
@@ -44,7 +44,8 @@ struct ContentView: View {
             }
             
             if viewModel.isSDKUIVisible {
-                UI(
+                
+                SaootiUI.UI(
                     navbarConfig: NavbarConfig(onCloseButtonClick: {
                         withAnimation {
                             viewModel.isSDKUIVisible.toggle()
