@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410423E52A7D053C00606F6A /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410423E42A7D053C00606F6A /* CarPlaySceneDelegate.swift */; };
 		410F5209299A74DD000D2390 /* SDK_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F5208299A74DD000D2390 /* SDK_SampleApp.swift */; };
 		410F520B299A74DD000D2390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F520A299A74DD000D2390 /* ContentView.swift */; };
 		410F520D299A74DF000D2390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410F520C299A74DF000D2390 /* Assets.xcassets */; };
 		410F5210299A74DF000D2390 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410F520F299A74DF000D2390 /* Preview Assets.xcassets */; };
 		4143954F29FACAEE003CF195 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143954E29FACAEE003CF195 /* ViewModel.swift */; };
-		42DD6B0E561CF2E2F675EA25 /* Pods_SDK_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EFEBDF2F03420398D93F80 /* Pods_SDK_Sample.framework */; };
+		FDD24AA9B015AEF997BA8BB6 /* Pods_SDK_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76EBBE0BD1F076FC1518946 /* Pods_SDK_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06D89C6634438D3D23E16D0E /* Pods-Workspace-SDK-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workspace-SDK-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Workspace-SDK-Sample/Pods-Workspace-SDK-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		410423DE2A7CFFAE00606F6A /* SaootiSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SaootiSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		410423E42A7D053C00606F6A /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 		410F5205299A74DD000D2390 /* SDK-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDK-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410F5208299A74DD000D2390 /* SDK_SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDK_SampleApp.swift; sourceTree = "<group>"; };
 		410F520A299A74DD000D2390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,8 +28,9 @@
 		4143954E29FACAEE003CF195 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		41E0A7C529EED888006DB6DD /* SDK-Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SDK-Sample.entitlements"; sourceTree = "<group>"; };
 		41E0A7C629EED8B6006DB6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		56EFEBDF2F03420398D93F80 /* Pods_SDK_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDK_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D2CFD894FC387847A597521 /* Pods-Workspace-SDK-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workspace-SDK-Sample.release.xcconfig"; path = "Target Support Files/Pods-Workspace-SDK-Sample/Pods-Workspace-SDK-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		9EC859A8067ECDF3568FB526 /* Pods-SDK-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDK-Sample.debug.xcconfig"; path = "Target Support Files/Pods-SDK-Sample/Pods-SDK-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		B76EBBE0BD1F076FC1518946 /* Pods_SDK_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDK_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20B6F57638F71946F316C3E /* Pods-SDK-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDK-Sample.release.xcconfig"; path = "Target Support Files/Pods-SDK-Sample/Pods-SDK-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DD6B0E561CF2E2F675EA25 /* Pods_SDK_Sample.framework in Frameworks */,
+				FDD24AA9B015AEF997BA8BB6 /* Pods_SDK_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +51,27 @@
 			children = (
 				9EC859A8067ECDF3568FB526 /* Pods-SDK-Sample.debug.xcconfig */,
 				D20B6F57638F71946F316C3E /* Pods-SDK-Sample.release.xcconfig */,
+				06D89C6634438D3D23E16D0E /* Pods-Workspace-SDK-Sample.debug.xcconfig */,
+				8D2CFD894FC387847A597521 /* Pods-Workspace-SDK-Sample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		410423E22A7D04FB00606F6A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				410F520A299A74DD000D2390 /* ContentView.swift */,
+				4143954E29FACAEE003CF195 /* ViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		410423E32A7D052500606F6A /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				410423E42A7D053C00606F6A /* CarPlaySceneDelegate.swift */,
+			);
+			path = CarPlay;
 			sourceTree = "<group>";
 		};
 		410F51FC299A74DD000D2390 = {
@@ -71,11 +95,11 @@
 		410F5207299A74DD000D2390 /* SDK-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				410F5208299A74DD000D2390 /* SDK_SampleApp.swift */,
+				410423E22A7D04FB00606F6A /* UI */,
+				410423E32A7D052500606F6A /* CarPlay */,
 				41E0A7C629EED8B6006DB6DD /* Info.plist */,
 				41E0A7C529EED888006DB6DD /* SDK-Sample.entitlements */,
-				410F5208299A74DD000D2390 /* SDK_SampleApp.swift */,
-				410F520A299A74DD000D2390 /* ContentView.swift */,
-				4143954E29FACAEE003CF195 /* ViewModel.swift */,
 				410F520C299A74DF000D2390 /* Assets.xcassets */,
 				410F520E299A74DF000D2390 /* Preview Content */,
 			);
@@ -93,7 +117,8 @@
 		410F5216299A750F000D2390 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				56EFEBDF2F03420398D93F80 /* Pods_SDK_Sample.framework */,
+				410423DE2A7CFFAE00606F6A /* SaootiSDK.framework */,
+				B76EBBE0BD1F076FC1518946 /* Pods_SDK_Sample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +239,7 @@
 			files = (
 				410F520B299A74DD000D2390 /* ContentView.swift in Sources */,
 				4143954F29FACAEE003CF195 /* ViewModel.swift in Sources */,
+				410423E52A7D053C00606F6A /* CarPlaySceneDelegate.swift in Sources */,
 				410F5209299A74DD000D2390 /* SDK_SampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,9 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
+            
+            Color.gray.opacity(0.15).edgesIgnoringSafeArea(.all)
+
             Button {
                 withAnimation {
                     viewModel.isSDKUIVisible.toggle()
@@ -58,7 +61,6 @@ struct ContentView: View {
                     .transition(.move(edge: .bottom))
             }
         }
-        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
