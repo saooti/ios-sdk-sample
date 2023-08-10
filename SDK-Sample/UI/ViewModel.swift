@@ -33,6 +33,7 @@ class ViewModel: ObservableObject {
     }
     
     func onMiniPlayerCloseButtonClick() {
+        Saooti.player.pause()
         isDetachedMiniPlayerVisible = false
     }
 }
