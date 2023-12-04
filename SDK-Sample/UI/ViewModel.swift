@@ -9,13 +9,18 @@ import Foundation
 import Combine
 import SaootiSDK
 
+enum UI {
+    case podcasts
+    case radio
+}
+
 class ViewModel: ObservableObject {
     
     private var cancellables = Set<AnyCancellable>()
     
     @Published private(set) var isDetachedMiniPlayerVisible = false
     
-    @Published var isSDKUIVisible = false
+    @Published var visibleUI: UI?
 
     init() {
         Saooti.player.playingState.publisher
@@ -28,12 +33,19 @@ class ViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    func onMiniPlayerClick() {
-        isSDKUIVisible = true
+    func onPodcastsUIButtonClick() {
+        visibleUI = .podcasts
+    }
+    
+    func onRadioUIButtonClick() {
+        visibleUI = .radio
+    }
+    
+    func onCloseButtonClick() {
+        visibleUI = nil
     }
     
     func onMiniPlayerCloseButtonClick() {
-        Saooti.player.pause()
         isDetachedMiniPlayerVisible = false
     }
 }

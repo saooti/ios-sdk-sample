@@ -17,7 +17,6 @@ struct SDK_SampleApp: App {
     }
     
     init() {
-        try? Saooti.setApiUrl("https://api.octopus.saooti.com/")
         Saooti.setOrganisationId("<organization_id>")
         SaootiUI.bind()
     }
