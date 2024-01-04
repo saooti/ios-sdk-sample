@@ -3,7 +3,7 @@ platform :ios, '14.0'
 target 'SDK-Sample' do
  use_frameworks!
 
-  pod 'SaootiSDK', :git => 'https://<github_login>:<github_token>M@github.com/saooti/ios-sdk.git'
+  pod 'SaootiSDK', :git => 'https://<github_login>:<github_token>@github.com/saooti/ios-sdk.git'
 
 end
 

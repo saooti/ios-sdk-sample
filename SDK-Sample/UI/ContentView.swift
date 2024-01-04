@@ -70,7 +70,7 @@ struct ContentView: View {
     private func podcastsUI() -> some View {
         // PodcastsHubView has internal navigation flow so it's wrapped in NavigationView
         SaootiUI.PodcastsHubView(
-            navbarConfig: NavbarConfig(onCloseButtonClick: {
+            navbarConfig: SaootiUI.Podcasts.NavbarConfig(onCloseButtonClick: {
                 withAnimation {
                     viewModel.onCloseButtonClick()
                 }
