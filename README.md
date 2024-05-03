@@ -8,7 +8,7 @@ You need to have access to https://github.com/saooti/ios-sdk
 
 Once you have permissions - generate a new (or update existing) classic token https://github.com/settings/tokens with `repo` permission for your account.
 
-Note: This sample uses CocoaPods but you can use SPM also.
+Note: This sample uses CocoaPods, you can use SPM also.
 
 Set your credentials - login and token to `Podfile`:
 ````
